@@ -222,6 +222,54 @@ justify-content:space-between;
     margin: 50px auto;
     color: var(--dark-2)
 }
+/* large device */
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+
+.header, .footer{
+    max-width:1400px;
+}
+.banner, .features , .features-2, .facts, .sponsors {
+    max-width:1200px;
+    margin:0 auto;
+}
+.features-container{
+    flex: 1;
+}
+.features-list{
+width:45%;
+}
+.features-image{
+    width:45%;
+}
+.banner-title{
+    font-size: 3rem;
+}
+.btn-styles{
+    padding:15px 20px;
+}
+.login-for-mobile{
+    padding: 10px 20px;
+}
+.btn-feature{
+    font-size: 1.5rem;
+    padding:15px 20px;
+    margin-top: -50px;
+}
+.sponsors {
+    margin-top: 50px;
+}
+.logo{
+ font-size:2rem;
+}
+h1{
+    font-size:1.5rem;
+}
+
+
+
+    
+}
+/* mini device */
 @media screen and (max-width: 576px) {
     .header{
         padding-bottom: 20px;
