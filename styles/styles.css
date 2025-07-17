@@ -338,9 +338,22 @@ h1{
 .features-title{
     font-size: 2rem;
 }
+.sponsors-title{
+    font-size:2rem;
+}
 .btn-styles{
     padding:10px 14px;
     font-size:1rem;
+}
+.factcs-number{
+    font-size: 2.5rem;
+    margin: 5px 0;
+}
+.facts{
+    margin:0 20px;
+}
+.fact-card{
+    padding: 10px;
 }
 /* features sections */
 .features{
@@ -366,16 +379,12 @@ h1{
     display: none;
 }
 /* facts */
-.facts{
-    margin: 0 20px;
-}
 .features-description{
     margin:20px 0;
 }
 .facts-cards-container{
     margin-top: 0;
-    grid-template-columns: repeat(2, 180px);
-    grid-template-rows: repeat(2, 180px);
+    grid-template-columns: repeat(1, 1fr);
     gap:20px;
 }
 
@@ -385,6 +394,11 @@ h1{
 .sposors-companies-container{
     margin-top: 50px;
     grid-template-columns: repeat(1 ,80px);
+    justify-content: center;
+    gap:50px;
+}
+.planners-image{
+    grid-template-columns: repeat(2, 100px);
     justify-content: center;
     gap:50px;
 }
