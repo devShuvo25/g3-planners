@@ -78,12 +78,14 @@ img{
     /* margin:20px 180px; */
     align-items: center;
     padding:50px 150px;
+    background-color: var(--bg-color);
+    box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.06);
 }
 .nav-list {
     gap:50px;
 }
 .fa-bars{
-    font-size:2rem;
+    font-size:1.75rem;
 }
 .login-for-mobile{
     display: none !important;
