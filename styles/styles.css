@@ -100,6 +100,7 @@ img{
 }
 #dropdown-js li{
     padding: 15px 25px;
+    text-align: right;
 }
 #dropdown-js li:nth-child(1){
     border-top-left-radius: 8px;
@@ -112,11 +113,12 @@ img{
 #dropdown-js li:hover{
 background-color: rgba(13, 118, 60, 0.989);
 transition: 0.4s ease;
+color: #ffff;
+}
+#dropdown-js li:hover a{
+    color: #ffff;
 }
 #dropdown-jsli a{
- color: #ffff;
-}
-#dropdown-js li a:hover{
  color: #ffff;
 }
 .login-for-mobile{
