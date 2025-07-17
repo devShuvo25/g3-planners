@@ -6,7 +6,7 @@
 /* root eliments */
 :root{
     --bg-color: rgba(255, 144, 14, 0.10);
-    --accent-color:rgba(255, 144, 14, 1.00);
+    --accent-color:#2ECC71;
     --dark-1:#131313;
     --dark-2:#424242;
     --dark-3:#727272;
@@ -278,18 +278,80 @@ justify-content:space-between;
 .sposors-companies-container img{
     filter: grayscale(100%);
 }
-.footer{
-    max-width:1920px;
-    text-align: center;
-    margin: 0 auto;
-    background-color: var(--bg-color);
-    padding: 20px 0;
 
+/* Footer CSS */
+.footer {
+  background-color: var(--bg-color); /* Emerald Green */
+  color: var(--dark-2);
+  padding: 40px 20px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.footer p{
-    margin: 50px auto;
-    color: var(--dark-2)
+
+.container {
+  max-width: 1200px;
+  margin: auto;
 }
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-section {
+  flex: 1 1 250px;
+  margin: 10px;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.footer-section p,
+.footer-section ul {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: var(--dark-2);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #1e7d4f; /* Darker green on hover */
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-section {
+    margin: 20px 0;
+  }
+}
+
 /* extra large device */
 @media screen and (min-width: 1200px) and (max-width: 1400px) {
 .header, .footer{
@@ -324,7 +386,8 @@ width:45%;
 .btn-feature{
     font-size: 1.5rem;
     padding:15px 20px;
-    margin-top: -50px;
+    margin-top: -300px;
+    margin-right:-200px;
 }
 .sponsors {
     margin-top: 50px;
@@ -335,14 +398,38 @@ width:45%;
 h1{
     font-size:1.5rem;
 }
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  .footer-section {
+    flex: 1 1 calc(25% - 20px); /* Four columns layout */
+    margin: 10px;
+  }
 }
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  .footer-section {
+    flex: 1 1 calc(25% - 20px); /* Four columns layout */
+    margin: 10px;
+  }
+}
+
+
 /* large devices */
 @media screen and (min-width:992px) and (max-width: 1200px) {
     .nav-list{
         display: none;
 
     }
-    header{
+    .banner{
         padding: 0 30px;
     }
     .fa-bars{
@@ -384,11 +471,23 @@ h1{
 .nav-bar{
     padding:30px;
 }
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+  .footer-section {
+    flex: 1 1 calc(25% - 20px); /* Four columns layout */
+    margin: 10px;
+  }
 }
 /* medium devices */
 @media screen and (min-width:768px) and (max-width: 992px){
-    header,main{
+    main{
         padding: 0 20px;
+    }
+        .banner{
+        padding: 0 30px;
     }
 .nav-list{
     display: none;
@@ -425,6 +524,18 @@ h1{
 .sponsors{
     margin: 50px auto;
 }
+
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap; /* Keep in a single row */
+  }
+
+  .footer-section {
+    flex: 1 1 calc(33.33% - 20px); /* Three columns */
+    margin: 10px;
+  }
+
 
 
 
@@ -482,11 +593,9 @@ h1{
 .logo{
     font-size:1.6rem;
 }
-.header{
-    height: auto;
-    padding: 20px;
- 
-}
+    .banner{
+        padding: 0 30px;
+    }
 .banner-content{
     margin:30px auto;
 }
@@ -496,6 +605,16 @@ h1{
     .banner-title{
         font-size: 2.25rem;
     }
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-around; /* Slightly more space between */
+    flex-wrap: wrap;
+  }
+
+  .footer-section {
+    flex: 1 1 45%; /* Two columns layout */
+    margin: 10px;
+  }
 }
 /* mini device */
 @media screen and (max-width: 576px){
@@ -622,4 +741,13 @@ h1{
 .features-container{
     margin:20px 0;
 }
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-section {
+    flex: 1 1 calc(33.33% - 20px); /* Three columns with some gap */
+    margin: 10px;
+  }
 }
