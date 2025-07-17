@@ -27,7 +27,15 @@
                 <li class="list-eliment"><a href="">Login</a></li>
             </ul>
             <!-- <button class="login-for-mobile">Log in</button> -->
-            <i class="fa-solid fa-bars" style="color: #ff900e;"></i>
+            <i onclick="
+            dropdownToggle();
+            " class="fa-solid fa-bars" style="color: #ff900e;"></i>
+            <ul class="dropdown " id="dropdown-js">
+                 <li class="list-eliment"><a href="">Home</a></li>
+                <li class="list-eliment"><a href="">About us</a></li>
+                <li class="list-eliment"><a href="">Contact us</a></li>
+                <li class="list-eliment"><a href="">Login</a></li>
+            </ul>
         </nav>
         <div class="banner">
             <div class="banner-content">
@@ -130,5 +138,25 @@ the majority have suffered alteration</p>
             <p>&copy; 2025,Shuvo Mallik,All rights reserved</p>
       </footer>
     <script src="https://kit.fontawesome.com/256c63fa14.js" crossorigin="anonymous"></script>
+    <script>
+
+        const menu = document.getElementById("dropdown-js");
+        const menuBar = document.querySelector(".fa-bars");
+    function dropdownToggle(){
+        if(menu.style.display === "none"){
+            menu.style.display = "block";
+        }else{
+            menu.style.display = "none";
+        }
+    }
+
+    document.addEventListener('click', function(e){
+        if(!menu.contains(e.target) && e.target !== menuBar){
+            menu.style.display = "none";
+        }
+    })
+
+
+    </script>
 </body>
 </html>
